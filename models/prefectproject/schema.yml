@@ -1,0 +1,65 @@
+version: 2
+
+sources:
+    - name: staging
+      #For bigquery:
+      database: astral-bit-411318
+
+      # For postgres:
+      #database: production
+
+      schema: prefectproject
+
+      # loaded_at_field: record_loaded_at
+      tables:
+        - name: spotify
+          columns:
+                - name: track_name
+                  description: The name of the track.
+                - name: artist_name
+                  description: The name of the artist(s).
+                - name: artist_count
+                  description: The number of artists in the track.
+                - name: released_year
+                  description: The year the track was released.
+                - name: released_month
+                  description: The month the track was released.
+                - name: released_day
+                  description: The day the track was released.
+                - name: in_spotify_playlists
+                  description: Indicates if the track is in Spotify playlists.
+                - name: in_spotify_charts
+                  description: Indicates if the track is in Spotify charts.
+                - name: streams
+                  description: The number of streams for the track.
+                - name: in_apple_playlists
+                  description: Indicates if the track is in Apple Music playlists.
+                - name: in_apple_charts
+                  description: Indicates if the track is in Apple Music charts.
+                - name: in_deezer_playlists
+                  description: Indicates if the track is in Deezer playlists.
+                - name: in_deezer_charts
+                  description: Indicates if the track is in Deezer charts.
+                - name: in_shazam_charts
+                  description: Indicates if the track is in Shazam charts.
+                - name: bpm
+                  description: The beats per minute of the track.
+                - name: key
+                  description: The key of the track.
+                - name: mode
+                  description: The mode of the track.
+                - name: danceability_percentage
+                  description: The danceability percentage of the track.
+                - name: valence_percentage
+                  description: The valence percentage of the track.
+                - name: energy_percentage
+                  description: The energy percentage of the track.
+                - name: acousticness_percentage
+                  description: The acousticness percentage of the track.
+                - name: instrumentalness_percentage
+                  description: The instrumentalness percentage of the track.
+                - name: liveness_percentage
+                  description: The liveness percentage of the track.
+                - name: speechiness_percentage
+                  description: The speechiness percentage of the track.
+

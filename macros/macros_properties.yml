@@ -1,11 +1,11 @@
 version: 2
 
 macros:
-  - name: get_payment_type_description
+  - name: get_monthname
     description: >
-      This macro receives a payment_type and returns the corresponding description.
+      This macro receives a release_month and returns the corresponding description.
     arguments:
-      - name: payment_type
+      - name: release_month
         type: int
         description: > 
           payment_type value.

@@ -8,5 +8,5 @@ macros:
       - name: release_month
         type: int
         description: > 
-          payment_type value.
+          release_month value.
           Must be one of the accepted values, otherwise the macro will return null

@@ -1,10 +1,11 @@
 version: 2
 
 seeds: 
-  - name: taxi_zone_lookup
+  - name: prefectproject
     description: >
-      Taxi Zones roughly based on NYC Department of City Planning's Neighborhood
-      Tabulation Areas (NTAs) and are meant to approximate neighborhoods, so you can see which
-      neighborhood a passenger was picked up in, and which neighborhood they were dropped off in. 
-      Includes associated service_zone (EWR, Boro Zone, Yellow Zone)
-            
+      This dataset is inspired by Spotify's music platform, focusing on artist data. The columns include track_name,
+      artist(s)_name, artist_count, released_year, released_month, released_day, in_spotify_playlists, in_spotify_charts,                       
+      streams, in_apple_playlists, in_apple_charts, in_deezer_playlists, in_deezer_charts, in_shazam_charts, bpm, key, 
+      mode, danceability_%, valence_%, energy_%, acousticness_%, instrumentalness_%, liveness_%, speechiness_%.
+
+      This dataset provides a wealth of information for creating insightful dashboards. In this section, we focus on transforming the data according to our specific requirements.
